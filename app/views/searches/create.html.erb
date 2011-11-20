@@ -1,13 +1,7 @@
 <h1>Recipes</h1>
 
 <ul>
-  <% @recipes.each do |recipe| %>
-    <li>
-      <div>
-      <%= recipe["title"] %>
-      </div>
-    </li>
-  <% end %>
+<%= render "recipe_list" %>
 </ul>
 
 <!-- <div>

@@ -13,7 +13,7 @@ class SearchesController < ApplicationController
     
     query = search_str.gsub(/\s/,'+')
     
-    uri = URI.parse("http://api.punchfork.com/recipes?key=269e5381c4164515&q=#{query}&count=10")
+    uri = URI.parse("http://api.punchfork.com/recipes?key=269e5381c4164515&q=#{query}&count=20")
     http = Net::HTTP.new(uri.host, uri.port)
     request = Net::HTTP::Get.new(uri.request_uri)
     
