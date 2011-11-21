@@ -21,6 +21,11 @@ class SearchesController < ApplicationController
     @output = JSON.parse(@response.body)
     @recipes = @output["recipes"]
     
+    respond to do |format|
+      format.html
+      format.js
+    end
+    
   end
   
   def new
