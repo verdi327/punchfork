@@ -5,3 +5,8 @@
  *= require_self
  *= require_tree . 
 */
+
+
+.img{
+	display:inline;
+}
